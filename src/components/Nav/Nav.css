@@ -1,0 +1,42 @@
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.938rem;
+  background: #fff;
+  padding: 0 4rem;
+  margin-bottom: 2rem;
+}
+
+.nav__container svg {
+  font-size: 20px;
+  margin-left: auto;
+  color: #0290ff;
+}
+
+.nav__container-items {
+  display: flex;
+}
+
+.nav__container-items_link {
+  list-style: none;
+  font-size: 0.813rem;
+  font-weight: 600;
+  margin-right: 2.5rem;
+  text-transform: uppercase;
+  color: #121212;
+}
+
+.link {
+  text-decoration: none;
+  color: #121212;
+}
+
+.nav__logo {
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: normal;
+  color: #0290ff;
+  margin-right: 2.9rem;
+}
