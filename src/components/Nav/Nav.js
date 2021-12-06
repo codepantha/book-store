@@ -4,7 +4,7 @@ import { ImUser } from 'react-icons/im';
 import './Nav.css';
 
 const Nav = () => (
-  <nav className="nav__container">
+  <nav className="nav__container section__padding">
     <p className="nav__logo">BookStore</p>
     <ul className="nav__container-items">
       <li className="nav__container-items_link">

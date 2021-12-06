@@ -10,3 +10,7 @@
   min-height: 100vh;
   background-color: #fafafa;
 }
+
+.section__padding {
+  padding: 0 4rem;
+}
