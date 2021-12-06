@@ -1,10 +1,8 @@
-import React from "react";
-import "./Categories.css";
+import React from 'react';
+import './Categories.css';
 
-const Categories = () => {
-  return (
-    <div>Categories Component</div>
-  )
-}
+const Categories = () => (
+  <div>Categories Component</div>
+);
 
 export default Categories;
