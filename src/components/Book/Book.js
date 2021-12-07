@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Book.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { uuid } from 'uuidv4';
-import { addBook, removeBook } from '../../redux/ducks/books/books';
+import { addBook, removeBook } from '../../redux/books/books';
 
 const Book = () => {
   const [title, setTitle] = useState('');
