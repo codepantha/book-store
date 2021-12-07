@@ -7,6 +7,7 @@ const App = () => (
   <div className="App">
     <Nav />
     <Routes>
+      <Route path="/" element={<Book />} />
       <Route path="/books" element={<Book />} />
       <Route path="/categories" element={<Categories />} />
     </Routes>
