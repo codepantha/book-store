@@ -16,6 +16,18 @@ const Book = () => (
         </div>
       </div>
     ))}
+    <div className="book__section-form">
+      <form>
+        <p>ADD A NEW BOOK</p>
+        <input type="text" name="name" placeholder="Book title" value="" />
+        <select>
+          {books.map((book) => (
+            <option key={book.id} value={book.category}>{book.category}</option>
+          ))}
+        </select>
+        <button type="submit">ADD BOOK</button>
+      </form>
+    </div>
   </section>
 );
 
