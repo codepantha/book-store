@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import './Book.css';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { uuid } from 'uuidv4';
-import { addBook } from '../../redux/ducks/books/books';
-import books from '../../books';
+import { addBook, removeBook } from '../../redux/ducks/books/books';
 
 const Book = () => {
   const [title, setTitle] = useState('');
+
+  // books state;
+  const books = useSelector((state) => state.booksReducer);
 
   const dispatch = useDispatch();
 
@@ -24,6 +26,11 @@ const Book = () => {
     };
 
     dispatch(addBook(book));
+    setTitle('');
+  };
+
+  const removeBookFromStore = (book) => {
+    dispatch(removeBook(book));
   };
 
   return (
@@ -34,9 +41,9 @@ const Book = () => {
             <p className="book__container-card_details-category">
               {book.category}
             </p>
-            <p className="book__container-card_details-title">{book.name}</p>
+            <p className="book__container-card_details-title">{book.title}</p>
             <p className="book__container-card_details-author">{book.author}</p>
-            <button type="button">Remove</button>
+            <button type="button" onClick={() => removeBookFromStore(book)}>Remove</button>
           </div>
         </div>
       ))}
