@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background-color: #fafafa;
+  padding-bottom: 2rem;
+}
+
+.section__padding {
+  padding: 0 4rem;
+}
