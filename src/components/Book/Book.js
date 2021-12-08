@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Book.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { uuid } from 'uuidv4';
-import { addBook, removeBook } from '../../redux/books/books';
+import { addBook, getBooks, removeBook } from '../../redux/books/books';
 
 const Book = () => {
   const [title, setTitle] = useState('');
@@ -32,6 +32,10 @@ const Book = () => {
   const removeBookFromStore = (book) => {
     dispatch(removeBook(book));
   };
+
+  useEffect(() => {
+    dispatch(getBooks());
+  }, [dispatch]);
 
   return (
     <section className="book__section section__padding">
