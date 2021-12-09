@@ -5,7 +5,6 @@ const GET_BOOKS_REQUEST = 'GET_BOOKS_REQUEST';
 const GET_BOOKS_SUCCESS = 'GET_BOOKS_SUCCESS';
 const GET_BOOKS_FAILED = 'GET_BOOKS_FAILED';
 
-
 export const getBooks = () => (dispatch) => {
   dispatch({ type: GET_BOOKS_REQUEST });
 
