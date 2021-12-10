@@ -75,7 +75,7 @@ const initialState = [];
 const booksReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_BOOKS_SUCCESS:
-      return [...state, ...action.payload];
+      return [...action.payload];
 
     case GET_BOOKS_FAILED:
       return [...state, ...action.payload];

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Categories = () => (
   <div>
-    <p style={{ fontWeight: 'bold' }}>Under Construction</p>
+    <p className="b f3">Under Construction</p>
   </div>
 );
 
