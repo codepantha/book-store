@@ -4,7 +4,7 @@
   align-items: center;
   height: 5.938rem;
   background: #fff;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .nav__container svg {
@@ -20,10 +20,16 @@
 .nav__container-items_link {
   list-style: none;
   font-size: 0.813rem;
+  font-family: 'Monserrat', sans-serif;
   font-weight: 600;
   margin-right: 2.5rem;
   text-transform: uppercase;
   color: #121212;
+  opacity: 0.5;
+}
+
+.nav__container-items_link.active {
+  opacity: 1;
 }
 
 .link {
@@ -32,6 +38,7 @@
 }
 
 .nav__logo {
+  font-family: 'Monserrat', sans-serif;
   font-size: 1.875rem;
   font-weight: 600;
   line-height: 48px;
