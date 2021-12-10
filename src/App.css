@@ -5,6 +5,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  margin-bottom: 5rem;
+}
+
 .App {
   text-align: center;
   min-height: 100vh;

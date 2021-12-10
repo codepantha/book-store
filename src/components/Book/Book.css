@@ -133,3 +133,68 @@
   font-weight: 300;
   letter-spacing: 0.5;
 }
+
+.book__section-form hr {
+  margin: 2.5rem 0;
+  border: solid 1px #e8e8e8;
+}
+
+.book__section-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.book__section-form h2 {
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: #888;
+  margin-bottom: 1.188rem;
+}
+
+.book__section-form_inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.book__section-form_inputs input {
+  flex: 3;
+  margin-right: 2.125rem;
+  height: 2.813rem;
+  padding: 0.813rem 1rem;
+  font-family: Montserrat;
+  font-size: 1rem;
+  color: #c4c4c4;
+  outline: none;
+  border: solid 1px #e8e8e8;
+}
+
+.book__section-form_inputs select {
+  flex: 2;
+  margin-right: 2.125rem;
+  height: 2.813rem;
+  padding: 0.813rem 1rem;
+  font-family: Montserrat;
+  font-size: 1rem;
+  color: #c4c4c4;
+  border: solid 1px #e8e8e8;
+}
+
+.book__section-form_inputs button {
+  flex: 1;
+  height: 2.813rem;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  font-family: RobotoSlab;
+  font-size: 0.813rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  background: #0290ff;
+  border: none;
+}

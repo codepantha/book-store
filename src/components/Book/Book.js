@@ -55,11 +55,19 @@ const Book = () => {
               <p className="book__container-card_details-author">
                 {book.author}
               </p>
-              <button type="button" className="first grow">Comments</button>
-              <button type="button" className="grow" onClick={() => removeBookFromStore(book)}>
+              <button type="button" className="first grow">
+                Comments
+              </button>
+              <button
+                type="button"
+                className="grow"
+                onClick={() => removeBookFromStore(book)}
+              >
                 Remove
               </button>
-              <button type="button" className="grow">Edit</button>
+              <button type="button" className="grow">
+                Edit
+              </button>
             </div>
 
             <div className="book__container-card_progress-container">
@@ -74,34 +82,38 @@ const Book = () => {
               <div className="book__container-card_current-chapter">
                 <h2>Current Chapter</h2>
                 <p>Chapter 17</p>
-                <button type="button" className="pointer">UPDATE PROGRESS</button>
+                <button type="button" className="pointer">
+                  UPDATE PROGRESS
+                </button>
               </div>
             </div>
-
           </div>
         ))
       ) : (
         <p>Ooops! Something bad happened...</p>
       )}
       <div className="book__section-form">
+        <hr />
         <form onSubmit={submitBook}>
-          <p>ADD A NEW BOOK</p>
-          <input
-            type="text"
-            name="title"
-            placeholder="Book title"
-            onChange={onInputChange}
-            value={title}
-            required
-          />
-          <select value={category} onChange={onCategoryChange}>
-            {books.map((book) => (
-              <option key={book.id} value={book.category}>
-                {book.category}
-              </option>
-            ))}
-          </select>
-          <button type="submit">ADD BOOK</button>
+          <h2>ADD A NEW BOOK</h2>
+          <div className="book__section-form_inputs">
+            <input
+              type="text"
+              name="title"
+              placeholder="Book title"
+              onChange={onInputChange}
+              value={title}
+              required
+            />
+            <select value={category} onChange={onCategoryChange}>
+              {books.map((book) => (
+                <option key={book.id} value={book.category}>
+                  {book.category}
+                </option>
+              ))}
+            </select>
+            <button type="submit" className="pointer grow">ADD BOOK</button>
+          </div>
         </form>
       </div>
     </section>
