@@ -16,12 +16,38 @@
   border: none;
   font-size: 0.875rem;
   font-weight: 300;
-  font-family: RobotoSlab;
+  font-family: 'RobotoSlab', serif;
   margin-top: 1.1313rem;
   padding-left: 0.938rem;
   padding-right: 0.938rem;
   color: #4386bf;
   cursor: pointer;
+}
+
+.book__container-card_current-chapter button {
+  background-color: #0290ff;
+  color: #fff;
+  margin-top: 0.75rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border: none;
+  font-family: 'RobotoSlab', serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.book__section-form_inputs button {
+  flex: 1;
+  height: 2.813rem;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  font-family: 'RobotoSlab', serif;
+  font-size: 0.813rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  background: #0290ff;
+  border: none;
 }
 
 .book__container-card_details button:not(:last-child) {
@@ -37,7 +63,7 @@
 }
 
 .book__container-card_details-title {
-  font-family: RobotoSlab;
+  font-family: 'RobotoSlab', serif;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -50,7 +76,7 @@
 .book__container-card_details-category {
   margin: 0 2.438rem 0 0;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.875rem;
   font-weight: bold;
   color: #121212;
@@ -86,7 +112,7 @@
 
 .book__container-card_progress p {
   margin: 0.063rem 5.75rem 0 0.688rem;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   color: #121212;
 }
@@ -94,7 +120,7 @@
 .book__container-card_progress span {
   margin: 0.438rem 4.938rem 0.75rem 0.75rem;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.875rem;
   letter-spacing: normal;
   color: #121212;
@@ -102,7 +128,7 @@
 
 .book__container-card_current-chapter h2 {
   opacity: 0.5;
-  font-family: RobotoSlab;
+  font-family: 'RobotoSlab', serif;
   font-size: 0.813rem;
   font-weight: 300;
   color: #121212;
@@ -111,7 +137,7 @@
 
 .book__container-card_current-chapter p {
   margin-top: 0.438rem;
-  font-family: RobotoSlab;
+  font-family: 'RobotoSlab', serif;
   font-size: 1rem;
   font-weight: 300;
   font-stretch: normal;
@@ -119,18 +145,6 @@
   line-height: normal;
   letter-spacing: -0.4px;
   color: #121212;
-}
-
-.book__container-card_current-chapter button {
-  background-color: #0290ff;
-  color: #fff;
-  margin-top: 0.75rem;
-  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
-  border: none;
-  font-family: RobotoSlab;
-  font-size: 0.813rem;
-  font-weight: 300;
-  letter-spacing: 0.5;
 }
 
 .book__section-form hr {
@@ -146,7 +160,7 @@
 }
 
 .book__section-form h2 {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   letter-spacing: -0.18px;
@@ -166,7 +180,7 @@
   margin-right: 2.125rem;
   height: 2.813rem;
   padding: 0.813rem 1rem;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   color: #c4c4c4;
   outline: none;
@@ -178,22 +192,8 @@
   margin-right: 2.125rem;
   height: 2.813rem;
   padding: 0.813rem 1rem;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   color: #c4c4c4;
   border: solid 1px #e8e8e8;
-}
-
-.book__section-form_inputs button {
-  flex: 1;
-  height: 2.813rem;
-  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
-  font-family: RobotoSlab;
-  font-size: 0.813rem;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-  text-align: center;
-  color: #fff;
-  background: #0290ff;
-  border: none;
 }
